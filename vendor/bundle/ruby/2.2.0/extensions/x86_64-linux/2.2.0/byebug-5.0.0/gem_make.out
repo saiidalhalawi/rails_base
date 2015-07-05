@@ -1,0 +1,15 @@
+/home/vagrant/.rvm/rubies/ruby-2.2.1/bin/ruby -r ./siteconf20150704-2982-1kqa1db.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling context.c
+compiling breakpoint.c
+compiling byebug.c
+compiling threads.c
+compiling locker.c
+linking shared-object byebug/byebug.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20150704-2982-jqwdsc/byebug
